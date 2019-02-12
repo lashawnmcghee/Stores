@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_logo_map"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:background="@drawable/rounded_tab_gradient">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/iv_logo"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/kohls"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:layout_alignParentEnd="true"
+                    android:textSize="24sp"
+                    android:textColor="@android:color/black"
+                    android:text="@string/details"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:background="@drawable/rect_detail_gradient">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:text="@string/name"
+                    style="@style/StoreDetailTextStyle"/>
+
+                <TextView
+                    android:id="@+id/tv_phone"
+                    android:text="@string/phone"
+                    style="@style/StoreDetailTextStyle"/>
+
+                <TextView
+                    android:id="@+id/tv_address"
+                    android:text="@string/address"
+                    style="@style/StoreDetailTextStyle"/>
+
+                <TextView
+                    android:id="@+id/tv_city"
+                    android:text="@string/city"
+                    style="@style/StoreDetailTextStyle"/>
+
+                <TextView
+                    android:id="@+id/tv_state"
+                    android:text="@string/state"
+                    style="@style/StoreDetailTextStyle"/>
+
+                <TextView
+                    android:id="@+id/tv_zip"
+                    android:text="@string/zipcode"
+                    style="@style/StoreDetailTextStyle"/>
+
+                <TextView
+                    android:id="@+id/tv_lat"
+                    android:text="@string/latitude"
+                    style="@style/StoreDetailTextStyle"/>
+
+                <TextView
+                    android:id="@+id/tv_long"
+                    android:text="@string/longitude"
+                    style="@style/StoreDetailTextStyle"/>
+
+                <TextView
+                    android:id="@+id/tv_id"
+                    android:text="@string/storeID"
+                    style="@style/StoreDetailTextStyle"/>
+
+                <TextView
+                    android:id="@+id/tv_logo"
+                    android:text="@string/storeLogoURL"
+                    style="@style/StoreDetailTextStyle"/>
+
+                <TextView
+                    android:id="@+id/tv_map_reset"
+                    android:text="@string/reset_map"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/round_rect_solid"
+                    style="@style/StoreDetailTextStyle"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:id="@+id/map_container"
+                android:background="@drawable/rect_detail_gradient">
+
+                <com.google.android.gms.maps.MapView
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="1dp"
+                    android:id="@+id/mv_map" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

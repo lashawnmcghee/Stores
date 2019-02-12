@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Stores</string>
+
+    <string name="google_maps_api_key">AIzaSyB4sOS0QX-N1v0v7tTWyxQE1ao-7g7oX_A</string>
+
+    <string name="details">Details</string>
+
+    <string name="name">Name: %1$s</string>
+    <string name="phone">Phone: %1$s</string>
+    <string name="address">Address: %1$s</string>
+    <string name="city">City: %1$s</string>
+    <string name="state">State: %1$s</string>
+    <string name="zipcode">ZipCode: %1$s</string>
+    <string name="latitude">Latitude: %1$s</string>
+    <string name="longitude">Longitude: %1$s</string>
+    <string name="storeID">Store ID: %1$s</string>
+    <string name="storeLogoURL">Store Logo URL: %1$s</string>
+
+    <string name="reset_map">Reset Map</string>
+
+    //errors
+    <string name="no_internet_connection">Currently unable to retrieve data from the internet.\nPlease check your WiFi or mobile network data connection.\nTo try again, swipe down to refresh this screen.</string>
+</resources>
